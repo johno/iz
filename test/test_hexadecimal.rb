@@ -11,13 +11,13 @@ class TestHexadecimal < Test::Unit::TestCase
     [nil, false, -1, '', '    ', 'g', '123g']
   end
 
-  def test_that_credit_card_values_return_true
+  def test_that_hexadecimal_values_return_true
     valid_hexadecimals.each do |hex|
       assert Iz.hexadecimal?(hex)
     end
   end
 
-  def test_that_invalid_credit_card_values_return_false
+  def test_that_invalid_hexadecimal_values_return_false
     invalid_hexadecimals.each do |hex|
       assert !Iz.hexadecimal?(hex)
     end

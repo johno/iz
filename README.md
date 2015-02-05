@@ -51,10 +51,6 @@ Iz.url?('google.com') # => true
 Iz.url?('http://google.com') # => true
 ```
 
-#### Credit Cards
-
-
-
 ## Acknowledgements
 
 Inspired by [is.js](https://github.com/arasatasaygin/is.js).

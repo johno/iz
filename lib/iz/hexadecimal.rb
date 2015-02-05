@@ -9,7 +9,7 @@ module Iz
     end
 
     def valid?
-      Iz.Hexadecimal.is_hexadecimal?(value)
+      Iz::Hexadecimal.is_hexadecimal?(value)
     end
 
     def self.is_hexadecimal?(value)
