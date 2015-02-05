@@ -1,4 +1,4 @@
-# iz
+# iz [![Build Status](https://travis-ci.org/johnotander/iz.svg?master)](https://travis-ci.org/johnotander/iz)
 
 All your type checking in one place. This intended to serve as simple sanity checking for
 common formats: IP addresses, zip codes, credit cards, phone numbers, etc. This isn't
