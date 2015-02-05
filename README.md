@@ -33,6 +33,16 @@ Iz.credit_card?('4242424242424242') # => true
 Iz.mac?('ababababab') # => true
 Iz.mac?(-1) # => false
 
+Iz.binary?('010101') # => true
+Iz.binary?('foo') # => false
+
+Iz.hexadecimal?(0x34) # => true
+Iz.hexadecimal?('abcdef123') # => true
+```
+
+## Upcoming support
+
+```ruby
 Iz.phone_number?('1234567') # => true
 
 Iz.zip_code?('12345', :us) # => true
@@ -43,11 +53,11 @@ Iz.ipv4?('192.168.0.1') # => true
 
 Iz.ipv6?(:foo) # => false
 
-Iz.hexadecimal?(0x34) # => true
-Iz.hexadecimal?('abcdef123') # => true
-
 Iz.hex_color?('#fff') # => true
+
 Iz.rgb_color?('rgb(123, 123, 123)') # => true
+
+Iz.hsl_color?('foobar') # => false
 
 Iz.url?('google.com') # => true
 Iz.url?('http://google.com') # => true
