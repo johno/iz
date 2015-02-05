@@ -7,18 +7,18 @@ require 'iz/mac'
 
 module Iz
   def self.credit_card?(cc)
-    Iz::CreditCard.is_credit_card?(cc)
+    !!Iz::CreditCard.is_credit_card?(cc)
   end
 
   def self.hexadecimal?(hexadecimal)
-    Iz::Hexadecimal.is_hexadecimal?(hexadecimal)
+    !!Iz::Hexadecimal.is_hexadecimal?(hexadecimal)
   end
 
   def self.binary?(binary)
-    Iz::Binary.is_binary?(binary)
+    !!Iz::Binary.is_binary?(binary)
   end
 
   def self.mac?(mac)
-    Iz::Mac.is_mac?(mac)
+    !!Iz::Mac.is_mac?(mac)
   end
 end

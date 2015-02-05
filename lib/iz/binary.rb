@@ -9,7 +9,7 @@ module Iz
     end
 
     def valid?
-      Iz::Binary.is_binary?(value)
+      !!Iz::Binary.is_binary?(value)
     end
 
     def self.is_binary?(value)

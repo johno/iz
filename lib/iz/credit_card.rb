@@ -9,7 +9,7 @@ module Iz
     end
 
     def valid?
-      Iz::CreditCard.is_credit_card?(number)
+      !!Iz::CreditCard.is_credit_card?(number)
     end
 
     def self.is_credit_card?(number)

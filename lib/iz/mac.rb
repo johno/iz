@@ -9,7 +9,7 @@ module Iz
     end
 
     def valid?
-      Iz::Mac.is_mac?(value)
+      !!Iz::Mac.is_mac?(value)
     end
 
     def self.is_mac?(value)
