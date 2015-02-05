@@ -6,6 +6,8 @@ intended to be the authoritative source on what each of these types are. It seek
 whether `'foobar'`, `'(555) 123 - 4567'`, and `nil` are phone numbers, or if `wefwef` looks
 like an email.
 
+Compatible with Ruby 1.8 - 2.2.
+
 ## Installation
 
 Add this line to your application's Gemfile:
