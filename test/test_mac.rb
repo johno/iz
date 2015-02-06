@@ -13,7 +13,6 @@ class TestMac < Test::Unit::TestCase
 
   def test_that_mac_values_return_true
     valid_mac_values.each do |mac|
-      puts mac.inspect
       assert Iz.mac?(mac)
     end
   end

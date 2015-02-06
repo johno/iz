@@ -13,6 +13,7 @@ module Iz
     end
 
     def self.is_binary?(value)
+      return false unless value
       value.to_s =~ REGEX
     end
   end

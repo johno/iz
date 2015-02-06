@@ -38,13 +38,19 @@ Iz.binary?('foo') # => false
 
 Iz.hexadecimal?(0x34) # => true
 Iz.hexadecimal?('abcdef123') # => true
+
+Iz.url?('google.com') # => false
+Iz.url?('//google.com') # => true
+Iz.url?('http://google.com') # => true
+
+Iz.alphanumeric?('1234ABCD') # => true
+
+Iz.phone_number?('1234567') # => true
 ```
 
 ## Upcoming support
 
 ```ruby
-Iz.phone_number?('1234567') # => true
-
 Iz.zip_code?('12345', :us) # => true
 
 Iz.ip?(nil) # => false
@@ -58,9 +64,6 @@ Iz.hex_color?('#fff') # => true
 Iz.rgb_color?('rgb(123, 123, 123)') # => true
 
 Iz.hsl_color?('foobar') # => false
-
-Iz.url?('google.com') # => true
-Iz.url?('http://google.com') # => true
 ```
 
 ## Acknowledgements
