@@ -33,6 +33,9 @@ Iz.credit_card?('4242424242424242') # => true
 Iz.mac?('ababababab') # => true
 Iz.mac?(-1) # => false
 
+Iz.email?('johnotander@gmail.com') # => true
+Iz.email?(nil) # => false
+
 Iz.binary?('010101') # => true
 Iz.binary?('foo') # => false
 
