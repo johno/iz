@@ -5,6 +5,7 @@ require 'iz/phone_number'
 require 'iz/credit_card'
 require 'iz/hexadecimal'
 require 'iz/binary'
+require 'iz/email'
 require 'iz/mac'
 require 'iz/url'
 
@@ -15,6 +16,10 @@ module Iz
 
   def self.hexadecimal?(hexadecimal)
     !!Iz::Hexadecimal.is_hexadecimal?(hexadecimal)
+  end
+
+  def self.email?(email)
+    !!Iz::Email.is_email?(email)
   end
 
   def self.binary?(binary)
