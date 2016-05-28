@@ -4,6 +4,8 @@ require 'iz/alphanumeric'
 require 'iz/phone_number'
 require 'iz/credit_card'
 require 'iz/hexadecimal'
+require 'iz/hex_color'
+require 'iz/hex_color'
 require 'iz/binary'
 require 'iz/email'
 require 'iz/mac'
@@ -16,6 +18,10 @@ module Iz
 
   def self.hexadecimal?(hexadecimal)
     !!Iz::Hexadecimal.is_hexadecimal?(hexadecimal)
+  end
+
+  def self.hex_color?(hex_color)
+    !!Iz::HexColor.is_hex_color?(hex_color)
   end
 
   def self.email?(email)
