@@ -13,7 +13,7 @@ module Iz
     end
 
     def self.is_hex_color?(value)
-      val = value.to_s
+      val = value.to_s.dup
       return false unless val[0] == '#'
 
       val[0] = ''
